@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>❤️🎂A DIVA, CHAPTER 19🎂❤️</title>
+</head>
+<body>
+     <style>
+        body {
+            background-color: #ffc0cb; /* Pink background */
+            color: black;
+            font-family: 'Georgia', serif;
+            text-align: center;
+            padding: 50px;
+            font-style: italic;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: rgba(255,255,255,0.3);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.2);
+        }
+
+        h1 {
+            font-size: 40px;
+        }
+        p {
+            font-size: 20px;
+            line-height: 1.6;
+        }
+        .heart {
+            font-size: 40px;
+            animation: beat 1s infinite;
+        }
+        @keyframes beat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Happy 19th Birthday, Simsi Attari 💕</h1>
+
+<p id="typing-text"></p>
+
+<script>
+const message = `Today isn’t just another day… it’s the day someone truly special was born.
+
+Simsi, you are more than just a name… you are a beautiful soul, a light in people’s lives, and someone who leaves warmth everywhere she goes.
+
+You may not realize it all the time, but you mean so much to the people around you. Your smile, your kindness, your presence… they matter more than words can ever explain.
+
+As you turn 19, just know that you are growing into an even more amazing person. There are so many beautiful moments waiting for you.
+
+Even on the days you doubt yourself, remember… you are loved, you are appreciated, and you are never alone.
+
+Happy Birthday, Simsi. 💕 
+ LOVE, HAJARAT ......>>>>❤️, with a pinch of Pat! ` ;
+
+
+let i = 0;
+function typeWriter() {
+    if (i < message.length) {
+        document.getElementById("typing-text").innerHTML += message.charAt(i);
+        i++;
+        setTimeout(typeWriter, 40);
+    }
+}
+typeWriter();
+</script>
+
+
+</div>
+</body>
+</html>
